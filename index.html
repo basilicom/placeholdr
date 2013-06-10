@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/demo.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholdr.js"></script>
+
+    <title>Placeholdr</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Demo: Placeholdr</h1>
+        <!--<a href="http://marco-senkpiel.de/2013/03/27/jquery-placeholdr-plugin/">Back</a>-->
+    </div>
+
+    <div class="wrapper">
+
+        <input type="text" name="name" value="" data-placeholder="Your Name">
+        <br><textarea name="message" data-placeholder="Your Message"></textarea>
+
+        <div class="doc">
+
+            <h2>HTML</h2>
+            <pre>
+&lt;input type="text" name="name" value="" data-placeholder="Your Name"&gt;
+&lt;textarea name="message" data-placeholder="Your Message"&gt;&lt;/textarea&gt;
+            </pre>
+
+
+            <h2>Default JavaScript</h2>
+            <pre>
+$(function(){
+    $('input[type=text], textarea').placeholdr();
+}
+            </pre>
+
+            <h2>Options</h2>
+            <dl>
+                <dt>inactiveClass:String - default: ''</dt>
+            </dl>
+
+    </div>
+
+    <div class="footer">
+        Marco Senkpiel 2013
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('input[type=text], textarea').placeholdr({
+                inactiveClass:'quiet'
+            });
+        });
+    </script>
+
+</body>
+</html>
