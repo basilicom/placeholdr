@@ -4,7 +4,5 @@ placeholdr
 simple placeholder replacement for older browsers
 
 
-using
-==========
-
+usage:
 $('input[type=text], textarea').placeholdr();
